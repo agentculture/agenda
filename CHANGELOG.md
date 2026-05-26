@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2] - 2026-05-26
+
+### Added
+
+- **CI-based SonarCloud analysis, activated.** `tests.yml` already had a `SonarCloud Scan` step (gated on `SONAR_TOKEN`) and `sonar-project.properties` already declared the `agentculture_agenda` project, but the scan was dormant: the `SONAR_TOKEN` secret was the empty placeholder created by `guild create`. The SonarCloud project is now registered and the real `SONAR_TOKEN` secret is set, so CI uploads `coverage.xml` and a SonarCloud check runs on each PR — no workflow or `sonar-project.properties` edit required.
+- **One-time prerequisite** (mirrors steward 0.9.3): the SonarCloud project must use **CI-based analysis** with Auto-Analysis disabled (Project → Administration → Analysis Method). Otherwise the auto-analysis run races the CI scan and the `coverage.xml` upload is ignored.
+
 ## [0.1.1] - 2026-05-26
 
 ### Changed
