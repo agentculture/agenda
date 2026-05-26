@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-05-26
+
+### Changed
+
+- **Distribution renamed `agenda` → `agenda-cli`** to match the PyPI Trusted
+  Publishing project (`pyproject.toml` `name`, `agenda/__init__.py` version
+  lookup, and the TestPyPI install hint in `publish.yml`). The import package,
+  `agenda` console script, and Sonar project key stay `agenda`.
+- **Agent description** set to "Work-state tracking for GitHub issues,
+  priorities, blockers, and next actions." (`pyproject.toml`, `README.md`,
+  `CLAUDE.md`).
+
+### Fixed
+
+- **markdownlint MD036** in the `CLAUDE.md` seed — the agent name was emitted as
+  a standalone emphasized line (`**agenda**`); now inlined in a sentence.
+- **README intro** — removed a dangling fragment left by the scaffold's
+  single-line description replacement.
+
 ## [0.1.0] - 2026-05-26
 
 ### Added
