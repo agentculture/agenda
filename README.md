@@ -1,9 +1,12 @@
 # agenda
 
-An agent and CLI that manages tasks for the AgentCulture mesh — task and task-version tracking plus a task-overview surface. The tasks analogue of guildmaster (which manages skills).
-lifecycle, skills, and operating contract. Clone it, rename the package, edit
-`culture.yaml`, and you have a new [AgentCulture](https://github.com/agentculture)
-mesh agent that `steward doctor` recognizes.
+Work-state tracking for GitHub issues, priorities, blockers, and next actions.
+
+`agenda` is an [AgentCulture](https://github.com/agentculture) mesh agent — the
+tasks analogue of [`guildmaster`](https://github.com/agentculture/guildmaster)
+(which manages skills). It is scaffolded from
+[`culture-agent-template`](https://github.com/agentculture/culture-agent-template);
+run `/init` to expand `CLAUDE.md` into a full runtime prompt for this domain.
 
 ## What you get
 

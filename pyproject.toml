@@ -1,7 +1,7 @@
 [project]
-name = "agenda"
-version = "0.1.0"
-description = "An agent and CLI that manages tasks for the AgentCulture mesh — task and task-version tracking plus a task-overview surface. The tasks analogue of guildmaster (which manages skills)."
+name = "agenda-cli"
+version = "0.1.1"
+description = "Work-state tracking for GitHub issues, priorities, blockers, and next actions."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.12"

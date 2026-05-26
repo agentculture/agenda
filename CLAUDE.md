@@ -7,11 +7,11 @@
 
 ## Agent
 
-**agenda**
+This repository hosts the **agenda** agent.
 
 ## Description
 
-An agent and CLI that manages tasks for the AgentCulture mesh — task and task-version tracking plus a task-overview surface. The tasks analogue of guildmaster (which manages skills).
+Work-state tracking for GitHub issues, priorities, blockers, and next actions.
 
 ## Re-init instruction
 
