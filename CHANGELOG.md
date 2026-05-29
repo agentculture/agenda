@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2026-05-29
+
+### Added
+
+- **`sonar.qualitygate.wait=true`** in `sonar-project.properties` — block CI on a
+  red SonarCloud quality gate, matching the `culture-agent-template` and the
+  other sibling agents (convertible/jetson/dominion-breaker). agenda was the only
+  one missing it. Takes effect only when the SonarCloud Scan step runs (gated on
+  `env.SONAR_TOKEN != ''`), so token-less/fork runs stay green.
+
+### Changed
+
+### Fixed
+
 ## [0.1.2] - 2026-05-26
 
 ### Added
