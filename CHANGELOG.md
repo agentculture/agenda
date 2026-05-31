@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 Format follows [Keep a Changelog](https://keepachangelog.com/). This project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2026-05-31
+
+### Added
+
+- **`outsource` skill** (explore/review/write) vendored from guildmaster — hand a scoped repo task to convertible (a *different* engine/mind) for a diverse second opinion. Cite-don't-import copy; portable wrapper resolving the convertible CLI. See the companion issue for aligning it to this agent's setup.
+
 ## [0.1.2] - 2026-05-26
 
 ### Added
