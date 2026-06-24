@@ -1,6 +1,6 @@
 [project]
 name = "agenda-cli"
-version = "0.2.0"
+version = "0.3.0"
 description = "Work-state tracking for GitHub issues, priorities, blockers, and next actions."
 readme = "README.md"
 license = "MIT"
